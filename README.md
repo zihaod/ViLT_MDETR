@@ -43,3 +43,6 @@ Experiments
 AMP
 Generate Beautiful Image
 ```
+
+You can easily run the code sequentially to reproduce all the results.
+But you will need to upload your own images and make sure the file names matche strings in the notebook.
