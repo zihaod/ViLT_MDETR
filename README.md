@@ -15,29 +15,31 @@ We have all the code for doing image style transfer and the corresponding experi
 ## Structure of the code framework
 We have structured the code into sections, and the overall framework is shown below. Note that you do not need to install any packages and all of the libraries we have used are already installed in a default Colab environment. But you will need to connect to a GPU runtime in order for the code to work.
 
+```
 Imports and Preprocess
 CNN Models
 Style Loss
 Content Loss
 Model with Loss
-  VGG19
-  AlexNet
-  ResNet
+  ├──VGG19
+  ├──AlexNet
+  ├──ResNet
 Neural Style Transfer
 Experiments
-  Image Evaluation Metric
-  Experiment: CNN Model
-    VGG19
-    AlexNet
-    ResNet
-  Experiment: Loss Function
-    L1 Loss
-    Smooth L1 Loss
-    Huber Loss
-    Restore MSE Content Loss
-  Experiment: Optimizer
-    Adam
-    SGD
-    Restore LBFGS optimizer
-  AMP
+  ├──Image Evaluation Metric
+  ├──Experiment: CNN Model
+  |    ├──VGG19
+  |    ├──AlexNet
+  |    ├──ResNet
+  ├──Experiment: Loss Function
+  |    ├──L1 Loss
+  |    ├──Smooth L1 Loss
+  |    ├──Huber Loss
+  |    ├──Restore MSE Content Loss
+  ├──Experiment: Optimizer
+       ├──Adam
+       ├──SGD
+       ├──Restore LBFGS optimizer
+AMP
 Generate Beautiful Image
+```
